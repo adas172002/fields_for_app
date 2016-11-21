@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+  <html>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <head>
+    <title>FieldsForApp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="ui fixed inverted menu">
+      <div class="ui container">
+        <div class="header item">
+          <img src="/assets/logo.png" alt="S"> Test fields_for
+        </div>
+        <%= link_to 'Menu', root_path, class: 'item' %>
+      </div>
+    </div>
+    <div class="ui main text container">
+      <%= semantic_flash %>
+      <%= yield %>
+    </div>
+  </body>
+</html>

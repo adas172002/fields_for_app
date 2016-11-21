@@ -1,0 +1,14 @@
+<div class="fields">
+  <div class="twelve wide required field">
+    <%= component.label 'name' %>
+    <%= component.text_field :name %>
+  </div>
+  <div class="four wide required field">
+    <%= component.label 'coverage' %>
+    <div class="ui action input">
+      <%= component.number_field :coverage, min: 0, max: 100, step: 5 %>
+      <%= component.hidden_field '_destroy' %>
+      <%= component.button 'Delete', type: 'button', class: 'ui negative button remove_fields' %> 
+    </div>
+  </div>
+</div>
