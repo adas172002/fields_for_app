@@ -1,9 +1,9 @@
 # fields_for_app
- +simple demo app for troubleshooting issue https://github.com/rails/rails/issues/27031
- +
- +# usage
- +There are two models: product that has many components. 
- +
- +Product validates name to include mandatory word *card*. Components that build product can be either *envelope* or *paper*.
- +
- +If one enters some data that are unvalid, only components that are within scopes `papers` or `envelopes` are shown, on either #create or #update actions. Expected behavior would be to show all components in rendered form.
+simple demo app for troubleshooting issue https://github.com/rails/rails/issues/27031
+ 
+# usage
+There are two models: product that has many components. 
+ 
+Product validates name to include mandatory word *card*. Components that build product can be either *envelope* or *paper*.
+ 
+If one enters some data that are unvalid, only components that are within scopes `papers` or `envelopes` are shown, on either #create or #update actions. Expected behavior would be to show all components in rendered form.
